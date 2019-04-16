@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav ul {
+  list-style: none;
+ 
+  transition: all 2s ease;
+  /* add height 0 be default */
+  height: 0;
+  opacity: 0.8;
+ 
+  overflow: hidden;
+}
+/* use this class for toggling */
+.showNav {
+  /* check height when inspecting element */
+  height: 174px;
+ opacity: 1;
+   
+ 
+}
+nav ul li a {
+  text-decoration: none;
+  display: block;
+  background: #0d130d;
+  color: rgb(212, 211, 209);
+  padding: 10px;
+  font-size: 18px;
+  text-transform: capitalize;
+  transition: all 1s ease;
+}
+
+nav ul li a:hover {
+  color: yellow;
+  background: #1a1919;
+  padding-left: 20px;
+}
+
+.logoBtn img {
+  width: 50px;
+  position: relative;
+  top: 3px;
+}
+
+.logo {
+  align-self: center;
+}
+
+.logoBtn {
+  background: #2b2b2b;
+  border-bottom: 2px solid orange;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px 0 10px;
+  align-items: center;
+}
+
+.bar {
+  height: 2px;
+  color: white;
+  width: 30px;
+  margin: 5px;
+  background: white;
+}
+
+.btn {
+  border: 1px solid whitesmoke;
+  display: inline-block;
+  align-self: center;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 576px) {
+  .btn {
+    display: none;
+  }
+
+  .logoBtn {
+    border: none;
+  }
+
+.fa-caret-down{
+  margin-left: 5px;
+}
+
+  nav ul li a {
+    background: transparent;
+    margin-right: 10px;
+  }
+  nav ul li a:hover {
+    background: transparent;
+    padding-left: 10px;
+  }
+
+  nav ul {
+    /* add height auto */
+    height: auto;
+
+    display: flex !important;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    align-self: center;
+    transition: all 2s ease;
+  }
+  /* add height auto for showNav as well */
+  .showNav {
+    height: auto;
+  }
+
+  nav ul li{
+    position: relative;
+    display: block;
+  }
+
+ 
+    /* new things that i added */
+
+
+
+
+    
+       nav ul li ul {
+      //position: absolute;
+        padding-top:10px;
+        
+
+        background: red;
+        display: none;
+        
+     }
+
+     nav ul li:hover ul {
+        background: rgb(161, 51, 51);
+        display: block;
+         
+     }
+
+     nav ul li ul li{
+      display: block;
+      width: 150px;
+       
+      border-top: 1px solid white;
+      
+       
+     }
+ 
+
+ /*end of new things that i added */
+
+  nav {
+    display: flex;
+    background: #2b2b2b;
+    align-self: center;
+    justify-content: space-between;
+  }
+}
