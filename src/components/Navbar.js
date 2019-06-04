@@ -26,7 +26,7 @@ class Navbar extends Component {
       <nav>
         <div className="logoBtn">
           <Link to="/" className="logo">
-            <img to="/" src={image} alt="" />
+            <img  src={image} alt="img" />
           </Link>
 
           <div className="btn" onClick={this.handleToggle}>
